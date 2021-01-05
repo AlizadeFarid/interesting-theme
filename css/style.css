@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*--------------Header Start------------------*/
+#header{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%)
+    ,url('../images/bg-masthead.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+}
+.navbar .logo{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+.navbar .logo h2:hover{
+    color: #f00;
+    cursor: pointer;
+}
+.navbar ul li{
+    float: left;
+    margin-right: 35px;
+}
+.navbar ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbar i{
+    font-size: 35px;
+    color: #fff;
+    display: none;
+}
+.header-inner{
+    position: absolute;
+}
+.container{
+    width: 100%;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+.container h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.container .line{
+    width: 70px;
+    height: 3px;
+    background: orangered;
+    margin: 30px auto;
+}
+.container p{
+    font-size: 21px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+.container button{
+    padding: 23px 40px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    background: #f4623a;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.container button:hover{
+    background: #f24516;
+}
+/*--------------Header end------------------*/
+
+/*--------------Orange section Start------------------*/
+#orange{
+    width: 100%;
+    background: #f4623a;
+    padding: 30px 0;
+}
+#orange .container{
+    margin: 0;
+}
+#orange h2{
+    font-size: 35px;
+    color: #fff;
+}
+#orange .line{
+    background: #fff;
+}
+#orange button{
+    color: #000;
+    background: #fff;
+}
+#orange button:hover{
+    background: rgb(220, 210, 210);
+}
+/*--------------Orange section end----------------------*/
+
+/*--------------Services section Start------------------*/
+#services{
+    width: 100%;
+}
+#services .container{
+    margin: 0;
+    padding: 140px 0 100px 0;
+}
+#services .container h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+}
+#services .row{
+    width: 100%;
+    padding: 40px;
+    margin: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#services .col-3{
+    width: 24%;
+    text-align: center;
+}
+#services .col-3 i{
+    font-size: 70px;
+    color: #f4623a;
+    margin-bottom: 20px;
+}
+#services .col-3 h4{
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+#services .col-3 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    opacity: 0.8;
+}
+/*--------------Services section end------------------*/
+
+/*--------------Portfolio section Start------------------*/
+#portfolio{
+    width: 100%;
+}
+#portfolio .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -5px;
+}
+#portfolio .row .col-4{
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .row .col-4 img{
+    width: 100%;
+}
+#portfolio .row .col-4::after{
+    content: 'CATEGORY Project Name';
+    position: absolute;
+    background: #f4623a;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .row .col-4:hover::after{
+    opacity: 0.9;
+}
+#portfolio .gray{
+    width: 100%;
+    background: #343a40;
+    padding: 140px 0;
+    text-align: center;
+}
+#portfolio h3{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #fff;
+}
+#portfolio button{
+    padding: 23px 40px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+#portfolio button:hover{
+    background: rgb(209, 209, 209);
+}
+
+/*--------------Contact section Start------------------*/
+
+#contact{
+    width: 100%;
+}
+
+#contact .container{
+    margin: 0;
+    padding-top: 140px;
+}
+#contact .container h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #212529;
+}
+#contact .container p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #212529;
+}
+#contact .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+#contact .box{
+    width: 35%;
+}
+#contact .box i{
+    font-size: 53px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+#contact .box p{
+    font-size: 18px;
+}
+#contact span a{
+    color: #f4623a;
+}
+#contact span a:hover{
+    text-decoration: underline;
+}
+/*--------------Contact section end------------------*/
+
+/*--------------Portfolio section Start--------------*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+footer p{
+    font-size: 14px;
+    color:  #6c757d;
+}
+
+@media (max-width: 992px){
+    #header{
+        height: 120vh;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar i{
+        display: block;
+    }
+    .header-inner h1{
+        font-size: 45px;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    #services .col-3{
+        width: 48%;
+    }
+    #contact .row{
+        flex-direction: column;
+    }
+    #contact .box{
+        width: 100%;
+    }
+}
+@media (max-width: 576px){
+
+    .header-inner h1{
+        font-size: 40px;
+    }
+    .container p{
+        font-size: 15px;
+    }
+    #services .col-3{
+        width: 100%;
+    }
+    #portfolio .row .col-4{
+        width: 100%;
+    }
+}
